@@ -35,14 +35,13 @@ Track your mental state with custom **pixel-art emoticons**:
 
 | **Day Mode** | **Evening Mode** | **Night Mode** |
 |:---:|:---:|
-| <img width="903" height="557" alt="image" src="https://github.com/user-attachments/assets/313b98e3-34da-4b8f-bb53-76b1fcaefd70" />
- | <img width="1032" height="594" alt="Evening" src="https://github.com/user-attachments/assets/cad65772-f04d-4d3e-bd39-46d59bedad9d" />
- | <img width="1067" height="597" alt="Night" src="https://github.com/user-attachments/assets/3cb8b540-0c14-40f2-993b-52c883dbdd72" />
- |
+| <img width="400" alt="day" src="https://github.com/user-attachments/assets/356154f6-db1e-4c75-90e9-832a4df01907" /> | <img width="400" alt="Evening" src="https://github.com/user-attachments/assets/cad65772-f04d-4d3e-bd39-46d59bedad9d" />
+ | 
 
-| **Stats Dashboard** | **Mood Selector** |
+| **Night Mode** | **Stats Dashboard** |
 |:---:|:---:|
-| *(Place your Stats Screenshot here)* | *(Place your Mood UI Screenshot here)* |
+| <img width="400" alt="Night" src="https://github.com/user-attachments/assets/3cb8b540-0c14-40f2-993b-52c883dbdd72" /> | <img width="400" alt="Stats" src="https://github.com/user-attachments/assets/c1ba7590-7d23-4209-abca-21fe522642a2" />
+ |
 
 ---
 
