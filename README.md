@@ -33,7 +33,7 @@ Track your mental state with custom **pixel-art emoticons**:
 
 ## 📸 Screenshots
 
-| **Day Mode** | **Evening Mode** | **Night Mode** |
+| **Day Mode** | **Night Mode** |
 |:---:|:---:|
 | <img width="400" alt="day" src="https://github.com/user-attachments/assets/356154f6-db1e-4c75-90e9-832a4df01907" /> | <img width="400" alt="Evening" src="https://github.com/user-attachments/assets/cad65772-f04d-4d3e-bd39-46d59bedad9d" />
  | 
