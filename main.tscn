@@ -1,0 +1,434 @@
+[gd_scene load_steps=24 format=3 uid="uid://c0g7ft5aq16w0"]
+
+[ext_resource type="Script" uid="uid://on28bp7pcewi" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://catytpt2yljgf" path="res://assets/day.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://c7smrcj8yr1js" path="res://assets/eve.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bjys8g7uypn22" path="res://assets/night.png" id="4_lquwl"]
+[ext_resource type="FontFile" uid="uid://cqc7tpy1i3sfm" path="res://assets/GravitasOne-Regular.ttf" id="5_efxa6"]
+[ext_resource type="Texture2D" uid="uid://8bo2a66u0mg" path="res://assets/Happy.png" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://qwgnjm7gg2xj" path="res://assets/Calm.png" id="6_kek77"]
+[ext_resource type="Texture2D" uid="uid://c1fouqgdf0dcf" path="res://assets/Neutral.png" id="7_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b7fi4o1761tdx" path="res://assets/Sad.png" id="8_efxa6"]
+[ext_resource type="Texture2D" uid="uid://dv2p71bw5vyfw" path="res://assets/Angry.png" id="9_dg77c"]
+[ext_resource type="FontFile" uid="uid://8dt7ywj6jc25" path="res://assets/Montserrat-Bold.ttf" id="11_dg77c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vivmo"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.24313726, 0.31764707, 0.48235294, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.10747976, 0.10747973, 0.10747973, 0.20784314)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_272bh"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(1, 1, 1, 0.5019608)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dg77c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycdy4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w48qg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.22352941, 0.22352941, 0.22352941, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.24313726, 0.31764707, 0.48235294, 0.78431374)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.5019608, 0.79607844, 0.76862746, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+bg_color = Color(0.16470589, 0.16470589, 0.30588236, 0.5882353)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.120887704, 0.05866185, 0.1710436, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+bg_color = Color(0.42745098, 0.52156866, 0.654902, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.24313726, 0.31764707, 0.48235294, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efxa6"]
+bg_color = Color(0.3647059, 0.45882353, 0.6313726, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c57u"]
+bg_color = Color(0.3254902, 0.40784314, 0.5921569, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Main" type="Control" node_paths=PackedStringArray("background_node", "input_name", "habits_container", "btn_happy", "btn_neutral", "btn_sad", "btn_angry", "btn_calm", "stats_panel", "history_grid", "label_total_days", "label_happy_days", "label_longest_streak")]
+layout_direction = 4
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+background_node = NodePath("Background")
+day_img = ExtResource("1_ig7tw")
+eve_img = ExtResource("3_1bvp3")
+night_img = ExtResource("4_lquwl")
+input_name = NodePath("Content/AddHabitRow/InputName")
+habits_container = NodePath("Content/Habits")
+btn_happy = NodePath("Content/Moods/BtnHappy")
+btn_neutral = NodePath("Content/Moods/BtnNeutral")
+btn_sad = NodePath("Content/Moods/BtnSad")
+btn_angry = NodePath("Content/Moods/BtnAngry")
+btn_calm = NodePath("Content/Moods/BtnCalm")
+stats_panel = NodePath("StatsPanel")
+history_grid = NodePath("StatsPanel/MarginContainer/MainLayout/PanelContainer/HistoryGrid")
+label_total_days = NodePath("StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer1/VBoxContainer/LblTotalNum")
+label_happy_days = NodePath("StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer2/VBoxContainer/LblHappyNum")
+label_longest_streak = NodePath("StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer3/VBoxContainer/LblStreakNum")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1553.0
+offset_bottom = 847.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3112771, 0.3206629)
+texture = ExtResource("1_ig7tw")
+expand_mode = 1
+
+[node name="AppBorder" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vivmo")
+
+[node name="Controls" type="HBoxContainer" parent="."]
+layout_direction = 3
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 30.0
+grow_horizontal = 2
+theme_override_constants/separation = 355
+
+[node name="MarginContainer" type="MarginContainer" parent="Controls"]
+layout_direction = 3
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Controls/MarginContainer"]
+layout_mode = 2
+
+[node name="BtnClose" type="Button" parent="Controls/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_272bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
+text = "x
+"
+icon_alignment = 1
+
+[node name="BtnStats" type="Button" parent="Controls/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "     📊Stats      "
+
+[node name="AppTitle" type="Label" parent="Controls"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3254902, 0.40784314, 0.5921569, 1)
+theme_override_fonts/font = ExtResource("5_efxa6")
+theme_override_font_sizes/font_size = 32
+text = "Oceanic"
+
+[node name="Content" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Moods" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+
+[node name="BtnHappy" type="Button" parent="Content/Moods"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ycdy4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+icon = ExtResource("5_lquwl")
+
+[node name="BtnCalm" type="Button" parent="Content/Moods"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+icon = ExtResource("6_kek77")
+
+[node name="BtnNeutral" type="Button" parent="Content/Moods"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+icon = ExtResource("7_4c57u")
+
+[node name="BtnSad" type="Button" parent="Content/Moods"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+icon = ExtResource("8_efxa6")
+
+[node name="BtnAngry" type="Button" parent="Content/Moods"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dg77c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w48qg")
+icon = ExtResource("9_dg77c")
+
+[node name="AddHabitRow" type="HBoxContainer" parent="Content"]
+layout_mode = 2
+alignment = 1
+
+[node name="InputName" type="LineEdit" parent="Content/AddHabitRow"]
+custom_minimum_size = Vector2(198, 0)
+layout_mode = 2
+placeholder_text = "New Habit..."
+
+[node name="BtnAdd" type="Button" parent="Content/AddHabitRow"]
+layout_mode = 2
+text = " 	 +  "
+
+[node name="Habits" type="VBoxContainer" parent="Content"]
+layout_mode = 2
+alignment = 1
+
+[node name="CheckWater" type="CheckBox" parent="Content/Habits"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("11_dg77c")
+text = "Drink Water"
+
+[node name="CheckRead" type="CheckBox" parent="Content/Habits"]
+layout_mode = 2
+text = "Read 10 Pages"
+
+[node name="StatsPanel" type="Panel" parent="."]
+visible = false
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7mycd")
+
+[node name="MarginContainer" type="MarginContainer" parent="StatsPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MainLayout" type="VBoxContainer" parent="StatsPanel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="StatsLabel" type="RichTextLabel" parent="StatsPanel/MarginContainer/MainLayout"]
+layout_mode = 2
+fit_content = true
+
+[node name="CardsRow" type="HBoxContainer" parent="StatsPanel/MarginContainer/MainLayout"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="PanelContainer1" type="PanelContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow"]
+custom_minimum_size = Vector2(75, 60)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kek77")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer1"]
+layout_mode = 2
+alignment = 1
+
+[node name="LblTotalNum" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer1/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+
+[node name="label2" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer1/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Total Days"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow"]
+custom_minimum_size = Vector2(75, 60)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kek77")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer2"]
+layout_mode = 2
+
+[node name="LblHappyNum" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "0"
+horizontal_alignment = 1
+
+[node name="label2" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Happy Days"
+horizontal_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow"]
+custom_minimum_size = Vector2(75, 60)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kek77")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer3"]
+layout_mode = 2
+
+[node name="LblStreakNum" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "0"
+horizontal_alignment = 1
+
+[node name="label2" type="Label" parent="StatsPanel/MarginContainer/MainLayout/CardsRow/PanelContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Streak On"
+horizontal_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="StatsPanel/MarginContainer/MainLayout"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HistoryGrid" type="GridContainer" parent="StatsPanel/MarginContainer/MainLayout/PanelContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 7
+
+[node name="BtnCloseStats" type="Button" parent="StatsPanel/MarginContainer/MainLayout"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5vw27")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_efxa6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4c57u")
+text = "  Back  "
+
+[connection signal="pressed" from="Controls/MarginContainer/HBoxContainer/BtnClose" to="." method="_on_btn_close_pressed"]
+[connection signal="pressed" from="Controls/MarginContainer/HBoxContainer/BtnStats" to="." method="_on_btn_stats_pressed"]
+[connection signal="pressed" from="Content/Moods/BtnHappy" to="." method="_on_btn_happy_pressed"]
+[connection signal="pressed" from="Content/Moods/BtnCalm" to="." method="_on_btn_calm_pressed"]
+[connection signal="pressed" from="Content/Moods/BtnNeutral" to="." method="_on_btn_neutral_pressed"]
+[connection signal="pressed" from="Content/Moods/BtnSad" to="." method="_on_btn_sad_pressed"]
+[connection signal="pressed" from="Content/Moods/BtnAngry" to="." method="_on_btn_angry_pressed"]
+[connection signal="pressed" from="Content/AddHabitRow/BtnAdd" to="." method="_on_btn_add_pressed"]
+[connection signal="toggled" from="Content/Habits/CheckWater" to="." method="_on_check_water_toggled"]
+[connection signal="toggled" from="Content/Habits/CheckRead" to="." method="_on_check_read_toggled"]
+[connection signal="pressed" from="StatsPanel/MarginContainer/MainLayout/BtnCloseStats" to="." method="_on_btn_close_stats_pressed"]
